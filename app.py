@@ -12,7 +12,7 @@ st.markdown("---")
 
 @st.cache_resource
 def train_model():
-    df = pd.read_csv("data/longitudinal_health_data.csv")
+df = pd.read_csv("longitudinal_health_data.csv")
     features = ['Year', 'Median_Age', 'SEIFA_Score', 'Clinics_per_10k', 'Diabetes_Pct']
     target = 'Preventable_Hosp_Rate'
     
